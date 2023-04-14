@@ -1,0 +1,74 @@
+header {
+ background:#fbfaf9;
+ position:fixed;
+ left:0;
+ top:0;
+ width:200px;
+ z-index:999;
+ height:100vh;
+ padding:50px 30px;
+}
+header h1 {}
+header h1 a {}
+header h1 a img {}
+header nav {
+ display:flex;
+ flex-flow:column nowrap;
+}
+header nav a {
+ margin:5px 0;
+ font-size:0.75rem;
+ font-weight:300;
+ text-transform:uppercase;
+}
+header nav a:first-child {color:#b05c59;}
+header .search {
+ display:block;
+ margin:40px 0;
+}
+header .search .search_bar {width:70%; background:none; border:none; border-bottom:1px solid #333;}
+header .gnb_bottom {
+ display:flex;
+ flex-flow:column nowrap;
+ 
+}
+header .gnb_bottom a {
+ margin:5px 0;
+ font-size:0.75rem;
+ font-weight:300;
+ text-transform:uppercase;
+}
+/* header end */
+main {
+ width:calc(100% - 400px);
+ margin:0 auto;
+ padding:0 10px;
+ background:pink;
+}
+main .user_menu {
+ text-align:right;
+ margin:50px 0;
+}
+main .user_menu a {margin:0 5px;}
+main .user_menu a em {margin-left:5px;}
+main .banner {
+ width:100%; height:500px;
+ display:grid; grid-template-areas:
+ 'big small'
+ '. small'
+ ;
+ grid-template-columns:70% 30%;
+
+}
+main .banner .big {grid:'big'; height:500px; overflow:hidden;}
+main .banner .big img {width:100%;}
+main .banner .small_bnr {}
+main .banner .small_bnr a {grid:'small'; display:block; height:250px;}
+main .banner .small_bnr a img {width:100%; height:100%;}
+main .slide_wrap {
+ margin-top:50px; width:100%;
+}
+main .slide_wrap .slide_title {display:flex; flex-flow:row nowrap; justify-content:space-between;}
+main .slide_wrap .slide_title a {width:12.5%; text-align:center; padding:20px; background:coral;}
+
+aside {width:200px; position:fixed; right:0; top:0; display:block;}
